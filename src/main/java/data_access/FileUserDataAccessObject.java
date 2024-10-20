@@ -93,10 +93,20 @@ public class FileUserDataAccessObject implements SignupUserDataAccessInterface,
     }
 
     /**
+     * Setting current user.
      * @param name yuh,
      */
     public void setCurrentUser(String name) {
 
+    }
+
+    /**
+     * String representation.
+     * @return String
+     */
+    @Override
+    public String getCurrentUser() {
+        return "";
     }
 
     @Override

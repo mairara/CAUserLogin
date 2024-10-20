@@ -127,6 +127,9 @@ tabs around if you like.)
 **Thought question:** Why doesn't the `LoginInteractor` have a `UserFactory`
 but `SignupInteractor` does?
 
+Because SignUpInteractor is the usecase of signing up, and that includes
+creating a new user but LoginInteractor does not need to create a new user. 
+
 A Controller calls the `execute` method in an Interactor to start processing
 the Use Case data. When it's done, the Interactor tells its Presenter what the result
 is, and the Presenter puts it into the View Model and tells the View Model to change
